@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+// Box sizing and spacing reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Document defaults
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+  line-height: 1.5;
+}
+
+// Media elements
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}

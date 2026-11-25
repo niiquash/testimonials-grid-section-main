@@ -1,0 +1,43 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "global" as *;
+
+body {
+  padding: 73px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-grey-100;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+}
+
+.testimonial-card {
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px $color-grey-500s;
+  padding: $spacing-400;
+}
+
+.card-1 {
+  background-color: #733fc8;
+  color: $color-white;
+}
+
+.card-2 {
+  background-color: $color-grey-500;
+  color: $color-white;
+}
+
+.card-3,
+.card-5 {
+  background-color: $color-white;
+  color: $color-grey-400;
+}
+.card-4 {
+  background-color: $color-dark-blue;
+  color: $color-grey-100;
+}
