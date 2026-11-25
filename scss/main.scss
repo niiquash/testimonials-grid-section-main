@@ -20,8 +20,20 @@ body {
   border-radius: 8px;
   box-shadow: 40px 60px 50px $color-grey-500s;
   padding: $spacing-400;
+
+  &__profile {
+    display: flex;
+    gap: $spacing-200;
+  }
+
+  &__avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
 }
 
+// Card specific colors
 .card-1 {
   background-color: #733fc8;
   color: $color-white;
