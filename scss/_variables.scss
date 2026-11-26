@@ -4,6 +4,7 @@ $color-dark-blue: #19202d;
 $color-white: #fff;
 $color-grey-100: #e7eaee;
 $color-grey-200: #cfcfcf;
+$color-grey-300: #a3aab4;
 $color-grey-400: #676d7e;
 $color-grey-500: #48556a;
 $color-grey-500s: rgba(71, 85, 107, 0.24);
@@ -30,3 +31,7 @@ $spacing-200: 1rem;
 $spacing-300: 1.5rem;
 $spacing-400: 2rem;
 $spacing-500: 2.5rem;
+
+// Breakpoint
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

@@ -28,3 +28,15 @@
   line-height: 110%;
   letter-spacing: normal;
 }
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
