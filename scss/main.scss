@@ -120,25 +120,64 @@ body {
 }
 
 @include tablet {
-  body {
-    padding: 83px 60px;
-  }
   .testimonials {
+    max-width: 647px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "ppl ppl"
+      "gry wht"
+      "dbl dbl"
+      "btwt btwt";
   }
 
   .testimonial-card--purple {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-area: ppl;
+  }
+
+  .testimonial-card--grey {
+    grid-area: gry;
+  }
+
+  .testimonial-card--white {
+    grid-area: wht;
   }
 
   .testimonial-card--dark-blue {
-    grid-column: 1 / 3;
-    grid-row: 3/4;
+    grid-area: dbl;
   }
 
   .testimonial-card--white-last {
-    grid-column: 1 / 3;
+    grid-area: btwt;
+  }
+}
+
+@include desktop {
+  .testimonials {
+    max-width: 1114px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "ppl ppl gry btwt"
+      "wht dbl dbl btwt";
+  }
+
+  .testimonial-card--purple {
+    grid-area: ppl;
+  }
+
+  .testimonial-card--grey {
+    grid-area: gry;
+  }
+
+  .testimonial-card--white {
+    grid-area: wht;
+  }
+
+  .testimonial-card--dark-blue {
+    grid-area: dbl;
+  }
+
+  .testimonial-card--white-last {
+    grid-area: btwt;
   }
 }
