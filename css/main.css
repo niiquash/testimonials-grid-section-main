@@ -163,6 +163,9 @@ body {
   }
   .testimonial-card--purple {
     grid-area: ppl;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 167px;
   }
   .testimonial-card--grey {
     grid-area: gry;
@@ -185,6 +188,7 @@ body {
   }
   .testimonial-card--purple {
     grid-area: ppl;
+    background-position: top right 60px;
   }
   .testimonial-card--grey {
     grid-area: gry;
